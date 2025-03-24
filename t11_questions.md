@@ -13,8 +13,8 @@ ___
 ```
     |                 | Monday | Wednesday | Friday |
     |-----------------|--------|-----------|--------|
-    | Driver          |        |           |        |
-    | Navigator       |        |           |        |
+    | Driver          |   Ahna     |           |        |
+    | Navigator       |   Jaron     |           |        |
     | Quality Control |        |           |        |
 ```
 
@@ -26,7 +26,8 @@ ___
     what each one represents:
 
 ```
-    **Replace This Text With Your Response**
+    The classes are Game, Player, and NPC. The Game class handles the running of the actual game, Player represents the 
+    characters and handles the movement, and NPC keeps the NPC in the screen and keeps it moving around.
 ```
 
 2.b. Look more closely at the **t11_game.py** file. There are 8 lines; identify if they are 
@@ -37,14 +38,14 @@ ___
 (Some are more than one answer!)
 
 ```
-    self.size = 800, 600                              # **Replace This Text With Your Response**
-    self.running = True                               # **Replace This Text With Your Response**
-    pygame.init()                                     # **Replace This Text With Your Response**
-    self.screen = pygame.display.set_mode(self.size)  # **Replace This Text With Your Response**
-    self.clock = pygame.time.Clock()                  # **Replace This Text With Your Response**
-    self.player = Player(self.size)                   # **Replace This Text With Your Response**
-    self.good_npc = NPC(self.size)                    # **Replace This Text With Your Response**
-    self.screen.fill('#9CBEBA')                       # **Replace This Text With Your Response**
+    self.size = 800, 600                              # Instance parameter
+    self.running = True                               # Instance parameter 
+    pygame.init()                                     # Method calls to another class or library
+    self.screen = pygame.display.set_mode(self.size)  # Method calls to another class or library
+    self.clock = pygame.time.Clock()                  # Method calls to another class or library
+    self.player = Player(self.size)                   # Method calls to another class 
+    self.good_npc = NPC(self.size)                    # Method calls to another class
+    self.screen.fill('#9CBEBA')                       # Instance parameter
 ```
 
 2.c. Parse through the `run()` method of **t11_game.py**. In particular, note how the game handles 
