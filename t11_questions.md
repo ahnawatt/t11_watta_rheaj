@@ -57,10 +57,11 @@ ___
 In your own words, describe how the four items above are accomplished in the Game class:
 
 ```
-    a) **Replace This Text With Your Response**
-    b) **Replace This Text With Your Response**
-    c) **Replace This Text With Your Response**
-    d) **Replace This Text With Your Response**
+    a) Line 52 runs a check 24 times a second to see if the two objects, NPC and Player, have collided. if they do, the 
+        game ends and prints text in the lower corner of the screen
+    b) it calls a function from the objects respective classes (Player and NPC)
+    c) Line 62 an 63 uses a method called blit, this essentialy deletes and redraws an object
+    d) line 65, Self.clock.tick makes the code update 24 times a second
 ```
 
 _Return to the Google Doc to continue the assignment._
@@ -73,7 +74,8 @@ _Return to the Google Doc to continue the assignment._
      How do you know?
 
 ```
-    **Replace This Text With Your Response**
+    The player class inherits functionality from from the sprite class because of the pygame.sprite.Sprite that's in the 
+    paranthesis.
 ```
 
 3.b. Sprites need two attributes to function: A surface and a rectangle. The surface (implemented in a `Surface` 
@@ -83,27 +85,31 @@ _Return to the Google Doc to continue the assignment._
      and explain what each line does. 
 
 ```
-    **Replace This Text With Your Response**
+    Lines 62 and 63 handle this functionality. they both define which object to use with the .surf and how they 
+        move/update with .rect
 ```
 
 3.c. The `Player` class has only one method so far. Parse that code and docstring, and describe what it does:
 
 ```
-    **Replace This Text With Your Response**
+  the first function tells the code what exactly shows up on screen and its attributes als well as its movement.
+    the second function defines how the player controls the player object on screen
 ```
 
 3.d. Similarly, the `NPC` class in **t11_NPC.py** also inherits the `Sprite` class from **pygame**, 
      but it does a little more than our `Player` class. Compare the two classes, and identify/describe the differences:
 
 ```
-    **Replace This Text With Your Response**
+    the differences is in how the object moves. the player object moves by player inputs, the NPC moves randomly using 
+        random module
 ```
 
 3.e. Of particular interest is how we keep the `NPC` on the screen. Describe how we're using 
     the `self.rect` attribute in the `get_direction()` method to keep the `NPC` visible.  
 
 ```
-    **Replace This Text With Your Response**
+    it runs a check on if the NPC object hits the edge of the screen and tels if to move the opposite direction, this is 
+        only non-random movement from the NPC object
 ```
 
 _Return to the Google doc to continue the assignment._ 
