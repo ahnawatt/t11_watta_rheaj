@@ -80,3 +80,18 @@ class NPC(pygame.sprite.Sprite):
             self.position[0] += self.move_distance
 
         self.get_direction()
+
+
+class GoodNPC(NPC):
+    def __init__ (self, screen_size):
+        super().__init__(self, screen_size)
+
+
+
+class bad_NPC():
+
+
+
+
+
+
